@@ -107,3 +107,10 @@ print(l3)
 a=[1,2,3,4,5,6,7,8]
 b=[a,8,9,0]
 print(b)
+
+my_list = ['Learn', 'Python', 'Today']
+
+# Joins elements with a space
+result = ' '.join(my_list)
+print(result)  # Output: Learn Python Today
+
