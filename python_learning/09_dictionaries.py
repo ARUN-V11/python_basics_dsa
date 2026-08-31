@@ -73,9 +73,22 @@ Many interview questions
 '''
 s="programming"
 repeated={}
+repeated_2=repeated
 for ch in s:
     if ch in repeated:
         repeated[ch]+=1
     else:
         repeated[ch]=1
 print(repeated) # complexity: o(n)
+
+# dictionary with list:
+# arr=["aet","tea","ate"]
+# output: {'aet': ['tea', 'ate']}
+
+arr=["aet","tea","ate"]
+dic={}
+key = arr[0]
+dic[key]=["tea"]
+dic[key].append("ate")
+print(dic)
+

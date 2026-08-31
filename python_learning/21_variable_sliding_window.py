@@ -52,6 +52,22 @@ for i in range(len(s)):
 
 print(max_count)                    # complexity : O(n) , space complexity : O(n)
 
+# another method for longest substring without repeating characters
+
+s = "abca"
+l = 0
+seen = set()
+count=0
+m_l=0
+for r in range(len(s)):
+    while s[r] in seen:
+        seen.remove(s[l])
+        l+=1
+    seen.add(s[r])
+    m_l=max(r-l+1,m_l)
+print(m_l)                         # complexity : O(n) , space complexity : O(n)
+
+
 # Count Distinct Characters in Every Window of Size K
 # s = "aabcbcdbca"
 # k = 3
