@@ -158,6 +158,12 @@ print(s.istitle())
 s=" "
 print(s.isspace())
 
+# string sort:
+
+s  = "python"
+sort_s = ''.join(sorted(s))
+print(sort_s)
+
 
 # string reverse:
 s= "python"
